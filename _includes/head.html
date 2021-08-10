@@ -1,0 +1,65 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.title %}
+  <title>{{ site.title }} | {% if page.collection %}{{ page.collection | capitalize }} -{% endif %} {{ page.title }}
+  </title>
+  {% else %}
+  <title>{{ site.title }} | {{ site.description }}</title>
+  {% endif %}
+  <meta name="description" content="{{ site.title }} - {{site.description}}">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/a11y-dark.min.css">
+  <link href="//fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+
+  <style>
+    .highlight {
+      max-height: 500px;
+      overflow: auto;
+      margin: 24px 0;
+    }
+
+    .level {
+      margin-bottom: 0 !important;
+    }
+
+    .handwriting {
+      font-family: 'Schoolbell', cursive;
+      transform: rotate(-5deg);
+      margin: 0 0.5em;
+      line-height: 1;
+    }
+
+    .content figure {
+      text-align: inherit;
+    }
+
+  </style>
+
+  {% if page.url == "/tools" %}
+  <style>
+    .tool {
+      margin-bottom: 100px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .tool img {
+      max-width: 100%;
+      height: 100%;
+      transition: transform .35s ease;
+      margin-bottom: 10px;
+    }
+
+    .tool:hover img {
+      transform: scale(1.1);
+    }
+
+    .tool p {
+      color: #4a4a4a;
+    }
+
+  </style>
+  {%- endif -%}
+</head>

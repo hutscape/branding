@@ -1,0 +1,15 @@
+title: Branding
+description: Styleguide and design elements for Hutscape
+url: "https://hutscape.com/branding"
+markdown: kramdown
+permalink: /:title
+youtube: https://www.youtube.com/user/sweska/videos
+github:
+  repository_url: https://github.com/hutscape/branding
+exclude: [
+  Gemfile,
+  Gemfile.lock,
+  LICENSE.md,
+  Makefile,
+  README.md
+]
